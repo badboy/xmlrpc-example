@@ -22,4 +22,5 @@ callxml "sample.requestLogin2", 'test'
 callxml "sample.requestLogin2", 42
 callxml "sample.gettoken"
 callxml "sample.zero"
+callxml "sample.zero2"
 callxml "sample.l", 7,8

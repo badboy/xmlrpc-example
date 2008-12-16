@@ -10,17 +10,21 @@ sample.requestLogin(42)
   Uncaught exception return can't jump across threads in method sample.requestLogin
 
 sample.requestLogin2(test)
-{"token"=>"8zgf100g8"}
+{"token"=>"5dbe1se6y"}
 
 sample.requestLogin2(42)
-{"token"=>"9jqf47492"}
+{"token"=>"7g0a1yo8a"}
 
 sample.gettoken()
-{"42"=>{"token"=>"9jqf47492", "time"=>#<XMLRPC::DateTime:0xb73422b0 @min=9, @year=2008, @hour=21, @day=16, @sec=18, @month=12>}, "test"=>{"token"=>"8zgf100g8", "time"=>#<XMLRPC::DateTime:0xb733ff24 @min=9, @year=2008, @hour=21, @day=16, @sec=18, @month=12>}}
+{"42"=>{"token"=>"7g0a1yo8a", "time"=>#<XMLRPC::DateTime:0xb72f5208 @min=12, @year=2008, @hour=21, @day=16, @sec=12, @month=12>}, "test"=>{"token"=>"5dbe1se6y", "time"=>#<XMLRPC::DateTime:0xb72f2e7c @min=12, @year=2008, @hour=21, @day=16, @sec=12, @month=12>}}
 
 sample.zero()
  !!! exception caught: XMLRPC::FaultException
   Uncaught exception undefined local variable or method `asdfasfdasdf' for main:Object in method sample.zero
+
+sample.zero2()
+ !!! exception caught: XMLRPC::FaultException
+  Uncaught exception divided by 0 in method sample.zero2
 
 sample.l(7, 8)
 {"sum"=>15, "difference"=>-1}

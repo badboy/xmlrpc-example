@@ -27,12 +27,16 @@ end
 s.add_handler("sample.gettoken") do
   $tokens
 end
-# geht garantiert nicht
+
+
 s.add_handler("sample.zero") do
  asdfasfdasdf;
  (1/0).to_s;
 end
 
+s.add_handler("sample.zero2") do
+ 1/0
+end
 
 s.add_handler("sample.l") do |a,b|
   { "sum" => a + b, "difference" => a - b }
